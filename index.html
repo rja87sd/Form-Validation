@@ -9,29 +9,58 @@
 </head>
 
 <body>
+    <header role="banner">
+        <h1>
+            Form Validation
+        </h1>
+        <p>Try entering incorrect values into the fields below.</p>
+    </header>
+
     <main>
         <h2>Form</h2>
         <form id="myForm">
             <label>
                 Username:
-                <input type="text" name="username" required/>
+                <!-- type="text" allows any kind of text to be entered. The required attribute requires at least something to be entered. -->
+                <input 
+                    type="text" 
+                    name="username" 
+                    required 
+                />
             </label>
 
             <label>
                 Age:
-                <input type="number" name="age" min="18" max="120" required/>
+                <!-- type="number" only allows numbers to be entered. min and max are the minimum and maximum values that will be allowed. -->
+                <input 
+                    type="number" 
+                    name="age" 
+                    min="18" 
+                    max="120" 
+                    required 
+                />
             </label>
 
             <label>
                 Email:
-                <input type="email" name="email" required>
+                <!-- type="email" allows only valid email address format to be entered -->
+                <input 
+                    type="email" 
+                    name="email" 
+                    required 
+                />
             </label>
 
             <label>
                 Phone Number:
-                <input aria-label="Enter a phone number in the format: 123-456-7890"
-                    title="Enter a phone number in the format: 123-456-7890" type="tel" name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" allows only 3 number digits followed by - followed by 3 number digits, etc.  -->
+                <input 
+                    aria-label="Enter a phone number in the format: 123-456-7890"
+                    title="Enter a phone number in the format: 123-456-7890" 
+                    type="tel" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                    required 
+                />
             </label>
             <button>Submit</button>
         </form>
