@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Day 5 Assignment | Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Form</h2>
+        <form id="myForm">
+            <label>
+                Username:
+                <input type="text" name="username" required/>
+            </label>
+
+            <label>
+                Age:
+                <input type="number" name="age" min="18" max="120" required/>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Phone Number:
+                <input aria-label="Enter a phone number in the format: 123-456-7890"
+                    title="Enter a phone number in the format: 123-456-7890" type="tel" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            </label>
+            <button>Submit</button>
+        </form>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
