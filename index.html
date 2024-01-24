@@ -22,45 +22,27 @@
             <label>
                 Username:
                 <!-- type="text" allows any kind of text to be entered. The required attribute requires at least something to be entered. -->
-                <input 
-                    type="text" 
-                    name="username" 
-                    required 
-                />
+                <input type="text" name="username" required />
             </label>
 
             <label>
                 Age:
                 <!-- type="number" only allows numbers to be entered. min and max are the minimum and maximum values that will be allowed. -->
-                <input 
-                    type="number" 
-                    name="age" 
-                    min="18" 
-                    max="120" 
-                    required 
-                />
+                <input type="number" name="age" min="18" max="120" required />
             </label>
 
             <label>
                 Email:
                 <!-- type="email" allows only valid email address format to be entered -->
-                <input 
-                    type="email" 
-                    name="email" 
-                    required 
-                />
+                <input type="email" name="email" required />
             </label>
 
             <label>
                 Phone Number:
                 <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" allows only 3 number digits followed by - followed by 3 number digits, etc.  -->
-                <input 
-                    aria-label="Enter a phone number in the format: 123-456-7890"
-                    title="Enter a phone number in the format: 123-456-7890" 
-                    type="tel" name="phone"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-                    required 
-                />
+                <input aria-label="Enter a phone number in the format: 123-456-7890"
+                    title="Enter a phone number in the format: 123-456-7890" type="tel" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
             </label>
             <button>Submit</button>
         </form>
